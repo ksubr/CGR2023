@@ -111,6 +111,26 @@ table#t02 tr:nth-child(even) {
 
 }
 
+/*  Table for checklists */
+table#t04 {
+  width:65%; 
+    text-align:left;
+    align:middle;
+}
+table#t04 td:nth-child(3) {
+  text-align: left;
+}
+table#t04 tr:nth-child(odd) {
+        color: var(--textoddcolor);
+    background-color: var(--bgoddcolor);
+
+}
+table#t04 tr:nth-child(even) {
+    color: var(--textevencolor);
+    background-color: var(--bgevencolor);
+
+}
+
 /*  */
 
 html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
@@ -246,5 +266,19 @@ table.roundedCorners tr:last-child > td {
   border-bottom: none;
 }
 
+
+
+div.scroll-container {
+  margin: auto;
+  height: 200px;
+  background-color: var(--textbg);
+  overflow-y: scroll;
+  white-space: normal;
+  padding: 10px;
+}
+
+/* div.scroll-container img {
+  padding: 10px;
+} */
 
 
