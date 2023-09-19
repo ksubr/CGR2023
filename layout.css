@@ -128,7 +128,6 @@ table#t04 tr:nth-child(odd) {
 table#t04 tr:nth-child(even) {
     color: var(--textevencolor);
     background-color: var(--bgevencolor);
-
 }
 
 /*  */
@@ -272,6 +271,7 @@ div.scroll-container {
   margin: auto;
   height: 200px;
   background-color: var(--textbg);
+  overflow-x: clip;
   overflow-y: scroll;
   white-space: normal;
   padding: 10px;
