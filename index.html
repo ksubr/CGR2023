@@ -183,155 +183,13 @@
                     </td>
                 </tr>
             </table> 
-            
-        
-        <!--<tr>
-                <td valign="top" style='width:500px'> 
-                    <table>            
-                    <td>
-                        <h2> News </h2>
-                        <ul>
-                                <li> Lectures will be in <a target="_blank" href="https://www.ed.ac.uk/maps/maps?building=lister-learning-and-teaching-centre"> 5.3 Lister Learning and Teaching Centre</a>. </li>
-                                <li> Labs will be in Appleton Tower (see calendar for details) </li>
-                        </ul>
-                    </td>
-                    </table>
-                </td>            
-                <td valign="top" style='width:500px'>            
-            -->
-         <!-- <a name="Contact"></a>
-         <h2>Contact</h2>
-         <table>               
-                    <ul>                    
-                        <li> Lectures: <a target="_blank" href=""> </a> (see <a href="#Schedule">schedule</a> for details).
-                        <li> Tutorials will be in  (see <a href="#Schedule">schedule</a> for details).  </li>
-                        <li> <a target="_blank" href="">Piazza</a> discussion page. <a target="_blank" href=""> Signup </a> </li>
-                        <li> <a target="_blank" href=""></a>Office hrs (IF.1.10A) : Tue 1:30pm - 2:30 pm  </li>                        
-                        <table style="width:50%" align="middle">	    
-
-                                <tr class="break"><td colspan="2"></td></tr>
-
-                                <tr>
-
-                                <td> <p style="float: left; font-size: 9pt; text-align: center; width: 128px; margin-right: 1%; margin-bottom: 0.5em;"><img src="img/Kartic.png" style="height: 128px"><br>Kartic Subr (Instructor)</br></p> </td>	      
-
-                                <td> <p style="float: left; font-size: 9pt; text-align: center; width: 128px; margin-right: 1%; margin-bottom: 0.5em;"><img src="img/Sean.png" style="height:128px"><br>Sean Memery (TA 1)</br></p> </td>	      
-
-                                <td> <p style="float: left; font-size: 9pt; text-align: center; width: 128px; margin-right: 1%; margin-bottom: 0.5em;"><img src="img/d.jpg" style="height:128px"><br> TBD (TA 2) </br></p> </td>	      
                                 
-                                </tr>
-
-                        </table> -->
-
-                            
                     </ul>
                 </td>                            
             </tr>
         </table>           
     </div>
 </div>
-
-<!-- <div class="wrapper row3">
-    <div id="container" class="clear">    
-    
-    <iframe
-    id="JotFormIFrame-232463307368357"
-    title="CGR website survey"
-    onload="window.parent.scrollTo(0,0)"
-    allowtransparency="true"
-    allowfullscreen="true"
-    allow="geolocation; microphone; camera"
-    src="https://form.jotform.com/232463307368357"
-    frameborder="0"
-    style="min-width:100%;max-width:100%;height:339px;border:none;"
-    scrolling="no"
-  >
-  </iframe>
-  <script type="text/javascript">
-  var ifr = document.getElementById("JotFormIFrame-232463307368357");
-  if (ifr) {
-    var src = ifr.src;
-    var iframeParams = [];
-    if (window.location.href && window.location.href.indexOf("?") > -1) {
-      iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-    }
-    if (src && src.indexOf("?") > -1) {
-      iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-      src = src.substr(0, src.indexOf("?"))
-    }
-    iframeParams.push("isIframeEmbed=1");
-    ifr.src = src + "?" + iframeParams.join('&');
-  }
-  window.handleIFrameMessage = function(e) {
-    if (typeof e.data === 'object') { return; }
-    var args = e.data.split(":");
-    if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-    if (!iframe) { return; }
-    switch (args[0]) {
-      case "scrollIntoView":
-        iframe.scrollIntoView();
-        break;
-      case "setHeight":
-        iframe.style.height = args[1] + "px";
-        if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-          iframe.style.minHeight = args[1] + "px";
-        }
-        break;
-      case "collapseErrorPage":
-        if (iframe.clientHeight > window.innerHeight) {
-          iframe.style.height = window.innerHeight + "px";
-        }
-        break;
-      case "reloadPage":
-        window.location.reload();
-        break;
-      case "loadScript":
-        if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-        var src = args[1];
-        if (args.length > 3) {
-            src = args[1] + ':' + args[2];
-        }
-        var script = document.createElement('script');
-        script.src = src;
-        script.type = 'text/javascript';
-        document.body.appendChild(script);
-        break;
-      case "exitFullscreen":
-        if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-        else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-        else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-        else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-        else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-        break;
-    }
-    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-    if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-      var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-      iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-    }
-  };
-  window.isPermitted = function(originUrl, whitelisted_domains) {
-    var url = document.createElement('a');
-    url.href = originUrl;
-    var hostname = url.hostname;
-    var result = false;
-    if( typeof hostname !== 'undefined' ) {
-      whitelisted_domains.forEach(function(element) {
-          if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-              result = true;
-          }
-      });
-      return result;
-    }
-  };
-  if (window.addEventListener) {
-    window.addEventListener("message", handleIFrameMessage, false);
-  } else if (window.attachEvent) {
-    window.attachEvent("onmessage", handleIFrameMessage);
-  }
-  </script>
-        </div>
-</div> -->
 
 <div class="wrapper row3">
     <a name="Lectures"></a>
@@ -356,9 +214,9 @@
             <tr>                
                 <td>2</td>                
                 <td>Graphics tools</td>                
-                <td></td>                
-                <!-- <td ><a target="_blank" href="2019/Slides/CG2019L1.pdf"> .pdf </a></td> -->
+                <td></td>                                
                 <td>21/09</td> <!-- Replace with the actual date -->
+                <td ><a target="_blank" href="https://ksubr.github.io/CGR2023/lectures/CG2023L2.pdf"> .pdf </a></td>
             </tr>
             <!-- Continue adding rows for each lecture with the respective dates -->
             <tr>                
